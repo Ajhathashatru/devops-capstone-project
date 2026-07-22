@@ -1,5 +1,7 @@
 # devops-capstone-project
 
+## Description: This is a complete Cloud Native CI/CD DevOps pipeline built using Tekton and OpenShift. The project automates the entire software development lifecycle, including code linting with Flake8, unit testing with Nose, container image creation using Buildah, and automated deployment to an OpenShift cluster. 
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.9](https://img.shields.io/badge/Python-3.9-green.svg)](https://shields.io/)
 
