@@ -158,14 +158,14 @@ class TestAccountService(TestCase):
         # create an account to update
         accounts = self._create_accounts(1)
         account = accounts[0]
-        
+
         # change the name and save it
         new_account = account.serialize()
         new_account["name"] = "Updated Name"
-        
+
         resp = self.client.put(f"{BASE_URL}/{account.id}", json=new_account)
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
-        
+
         data = resp.get_json()
         self.assertEqual(data["name"], "Updated Name")
 
@@ -178,11 +178,11 @@ class TestAccountService(TestCase):
         """It should Delete an Account"""
         accounts = self._create_accounts(1)
         account = accounts[0]
-        
+
         resp = self.client.delete(f"{BASE_URL}/{account.id}")
         self.assertEqual(resp.status_code, status.HTTP_204_NO_CONTENT)
         self.assertEqual(len(resp.data), 0)
-        
+
         # Verify it's gone
         resp = self.client.get(f"{BASE_URL}/{account.id}")
         self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
