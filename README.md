@@ -1,7 +1,6 @@
 # devops-capstone-project
 
-![Build Status](https://github.com/Ajhathashatru/devops-capstone-project/a
-ctions/workflows/ci-build.yaml/badge.svg)
+![Build Status](https://github.com/Ajhathashatru/devops-capstone-project/actions/workflows/ci-build.yaml/badge.svg)
 
 ## Description: This is a complete Cloud Native CI/CD DevOps pipeline built using Tekton and OpenShift. The project automates the entire software development lifecycle, including code linting with Flake8, unit testing with Nose, container image creation using Buildah, and automated deployment to an OpenShift cluster. 
 
