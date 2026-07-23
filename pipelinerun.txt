@@ -1,0 +1,45 @@
+Pipeline still running ...
+PipelineRun is still running: Tasks Completed: 0 (Failed: 0, Cancelled 0), Incomplete: 5, Skipped: 0
+[clone : clone] + [ false = true ]
+[clone : clone] + [ false = true ]
+[clone : clone] + [ false = true ]
+[clone : clone] + CHECKOUT_DIR=/workspace/output/
+[clone : clone] + [ true = true ]
+[clone : clone] + cleandir
+[clone : clone] + [ -d /workspace/output/ ]
+[clone : clone] + rm -rf /workspace/output//LICENSE /workspace/output//Makefile /workspace/output//Procfile /workspace/output//README.md /workspace/output//bin /workspace/output//deploy /workspace/output//postgresql-ephemeral-template.json /workspace/output//requirements.txt /workspace/output//service /workspace/output//setup.cfg /workspace/output//tekton /workspace/output//tests
+[clone : clone] rm: cannot remove '/workspace/output//service/common/__pycache__/__init__.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/common/__pycache__/log_handlers.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/common/__pycache__/status.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/common/__pycache__/error_handlers.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/common/__pycache__/cli_commands.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/__pycache__/__init__.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/__pycache__/config.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/__pycache__/routes.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//service/__pycache__/models.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//tests/__pycache__/__init__.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//tests/__pycache__/test_cli_commands.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//tests/__pycache__/test_models.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//tests/__pycache__/factories.cpython-39.pyc': Permission denied
+[clone : clone] rm: cannot remove '/workspace/output//tests/__pycache__/test_routes.cpython-39.pyc': Permission denied
+[clone : clone] + rm -rf /workspace/output//.coverage /workspace/output//.devcontainer /workspace/output//.flaskenv /workspace/output//.git /workspace/output//.gitattributes /workspace/output//.github /workspace/output//.gitignore
+[clone : clone] + rm -rf /workspace/output//..?*
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + git config --global --add safe.directory /workspace/output
+[clone : clone] + /ko-app/git-init -url=https://github.com/Ajhathashatru/devops-capstone-project.git -revision=cd-pipeline -refspec= -path=/workspace/output/ -sslVerify=true -submodules=true -depth=1 -sparseCheckoutDirectories=
+[clone : clone] {"level":"error","ts":1784809310.8698728,"caller":"git/git.go:53","msg":"Error running git [remote get-url origin]: exit status 2\nerror: No such remote 'origin'\n","stacktrace":"github.com/tektoncd-catalog/git-clone/git-init/git.run\n\tgithub.com/tektoncd-catalog/git-clone/git-init/git/git.go:53\ngithub.com/tektoncd-catalog/git-clone/git-init/git.Fetch\n\tgithub.com/tektoncd-catalog/git-clone/git-init/git/git.go:109\nmain.main\n\tgithub.com/tektoncd-catalog/git-clone/git-init/main.go:52\nruntime.main\n\truntime/proc.go:272"}
+[clone : clone] {"level":"info","ts":1784809322.9876447,"caller":"git/git.go:186","msg":"Successfully cloned https://github.com/Ajhathashatru/devops-capstone-project.git @ 2381f53cb65145f162e8e648b6554c79277f745d (grafted, HEAD, origin/cd-pipeline) in path /workspace/output/"}
+[clone : clone] {"level":"info","ts":1784809323.6689441,"caller":"git/git.go:225","msg":"Successfully initialized and updated submodules in path /workspace/output/"}
+[clone : clone] + cd /workspace/output/
+[clone : clone] + git rev-parse HEAD
+[clone : clone] + RESULT_SHA=2381f53cb65145f162e8e648b6554c79277f745d
+[clone : clone] + EXIT_CODE=0
+[clone : clone] + [ 0 != 0 ]
+[clone : clone] + git log -1 --pretty=%ct
+[clone : clone] + RESULT_COMMITTER_DATE=1784809224
+[clone : clone] + printf %s 1784809224
+[clone : clone] + printf %s 2381f53cb65145f162e8e648b6554c79277f745d
+[clone : clone] + printf %s https://github.com/Ajhathashatru/devops-capstone-project.git
+
